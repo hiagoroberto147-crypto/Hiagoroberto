@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eucalipto Silvipastoril - Guia Técnico Completo</title>
+    <meta name="description" content="Guia técnico completo sobre cultivo de eucalipto em sistema silvipastoril: tratos culturais, manejo, pragas e calendário técnico.">
+    <meta name="keywords" content="eucalipto, sistema silvipastoril, tratos culturais, manejo florestal, agropecuária">
+    <meta name="author" content="Hiago Azeredo Alves Roberto">
+    <style>
+        /* CSS Reset e Variáveis */
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+
+        :root {
+            --primary: #2d6a4f;
+            --primary-dark: #1b4332;
+            --secondary: #40916c;
+            --accent: #95d5b2;
+            --light: #d8f3dc;
+            --white: #ffffff;
+            --dark: #1a1a2e;
+            --gray: #6c757d;
+            --light-gray: #f8f9fa;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background-color: var(--white);
+        }
+
+        /* Header e Navegação */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--accent);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+            color: var(--white);
+            padding: 140px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--white);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: var(--shadow);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+            background: var(--primary-dark);
+            color: var(--white);
+        }
+
+        /* Sections Gerais */
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: var(--gray);
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Cards */
+        .card{
+            background:var(--light-gray);
+            padding:25px;
+            border-radius:15px;
+            box-shadow:var(--shadow);
+            margin-bottom:20px;
+        }
+        ul{padding-left:25px;}
+        li{margin-bottom:8px;}
+
+        /* Info Boxes */
+        .info-box, .info {
+            background: linear-gradient(135deg, var(--light), var(--accent));
+            border-left: 5px solid var(--primary);
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .info-box h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left-color: #d97706;
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+        .warning-box h4 {
+            color: #d97706;
+            margin-bottom: 10px;
+        }
+
+        /* Timeline/Calendário */
+        .card-calendar ul{padding-left:20px;}
+        .card-calendar strong{color:var(--primary);}
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px 20px;
+            margin-top: 40px;
+            font-size: 0.95rem;
+            opacity: 0.96;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu {display: block;}
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0; right: 0;
+                background: var(--primary-dark);
+                flex-direction: column;
+                padding: 20px;
+                gap: 10px;
+            }
+            nav ul.active {display: flex;}
+            section {padding: 60px 10px;}
+            .hero h1 {font-size: 1.7rem;}
+        }
+        html {scroll-behavior: smooth;}
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🌳</span>
+                <span>Silvipastoril</span>
+            </div>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#resumo">Resumo Rápido</a></li>
+                    <li><a href="#tratos">Tratos</a></li>
+                    <li><a href="#pragas">Pragas</a></li>
+                    <li><a href="#calendario">Calendário</a></li>
+                    <li><a href="#autor">Sobre o Autor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>🌲 Cultivo de Eucalipto em Sistema Silvipastoril</h1>
+            <p>Guia técnico desenvolvido por <strong>Hiago Azeredo Alves Roberto</strong><br>
+            Técnico em formação em Zootecnia • Sustentabilidade &amp; Produtividade</p>
+            <a href="#tratos" class="btn">Ver Tratos Culturais</a>
+        </div>
+    </section>
+
+    <!-- Resumo Rápido -->
+    <section id="resumo">
+        <div class="section-title">
+            <h2>📌 Resumo Rápido para o Produtor</h2>
+            <p>Principais recomendações e orientações resumidas para o melhor manejo do sistema silvipastoril com eucalipto.</p>
+        </div>
+        <div class="card">
+            <ul>
+                <li><strong>Espaçamento recomendado:</strong> 12x2m ou 14x2m</li>
+                <li><strong>Primeira adubação:</strong> 30 dias após plantio</li>
+                <li><strong>Controle de formigas:</strong> antes do plantio</li>
+                <li><strong>Primeiro desbaste:</strong> 4º ao 5º ano</li>
+                <li><strong>Integração com pastagem:</strong> após 12–18 meses</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tratos Culturais -->
+    <section id="tratos">
+        <div class="section-title">
+            <h2>🌱 Tratos Culturais Essenciais</h2>
+            <p>Cuidados fundamentais para garantir o desenvolvimento saudável e produtivo do eucalipto em sistemas integrados.</p>
+        </div>
+        <div class="card">
+            <ul>
+                <li>Correção de solo conforme análise química</li>
+                <li>Adubação de plantio com fósforo</li>
+                <li>Capina nos primeiros 6 meses</li>
+                <li>Monitoramento quinzenal de pragas</li>
+                <li>Desrama para produção de madeira de qualidade</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <h4>⚠️ Atenção</h4>
+            Recomendações podem variar segundo a análise do solo e a orientação técnica local.
+        </div>
+    </section>
+
+    <!-- Pragas -->
+    <section id="pragas">
+        <div class="section-title">
+            <h2>🐛 Principais Pragas</h2>
+            <p>Identificação e controle integrado das principais ameaças à cultura do eucalipto.</p>
+        </div>
+        <div class="card">
+            <ul>
+                <li><strong>Formiga cortadeira:</strong> controle obrigatório pré-plantio</li>
+                <li><strong>Lagartas desfolhadoras:</strong> inspeção periódica</li>
+                <li><strong>Psilídeo:</strong> observar deformação nas folhas</li>
+                <li><strong>Ferrugem:</strong> monitorar manchas alaranjadas</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Calendário Técnico -->
+    <section id="calendario">
+        <div class="section-title">
+            <h2>📅 Calendário Técnico Simplificado</h2>
+            <p>Etapas principais do manejo do eucalipto no sistema silvipastoril.</p>
+        </div>
+        <div class="card card-calendar">
+            <ul>
+                <li><strong>Mês 0:</strong> Plantio e adubação inicial</li>
+                <li><strong>1º mês:</strong> Replantio de falhas</li>
+                <li><strong>3–6 meses:</strong> Capinas e controle de pragas</li>
+                <li><strong>1º ano:</strong> Avaliação de crescimento</li>
+                <li><strong>4º ano:</strong> Possível desbaste</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sobre o Autor -->
+    <section id="autor">
+        <div class="section-title">
+            <h2>👨‍🌾 Sobre o Autor</h2>
+        </div>
+        <div class="card">
+            <p>
+                Hiago Azeredo Alves Roberto é técnico em formação em Zootecnia, com interesse em sistemas de produção sustentáveis e integração lavoura-pecuária-floresta.
+                Este material foi desenvolvido com base em recomendações técnicas e literatura especializada.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Material técnico baseado em recomendações da Embrapa Florestas.<br>
+            © 2026 – Hiago Azeredo Alves Roberto<br>
+            Campos dos Goytacazes – RJ
+        </p>
+    </footer>
+</body>
+</html>
