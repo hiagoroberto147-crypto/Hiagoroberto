@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guia Técnico de Eucalipto em Sistema Silvipastoril | Hiago Azeredo</title>
+
+<meta name="description" content="Guia técnico completo sobre cultivo de eucalipto em sistema silvipastoril: tratos culturais, manejo, pragas e calendário técnico.">
+<meta name="keywords" content="eucalipto, sistema silvipastoril, tratos culturais, manejo florestal, agropecuária">
+<meta name="author" content="Hiago Azeredo Alves Roberto">
+
+<style>
+:root {
+--primary:#1B5E20;
+--primary-dark:#0D3010;
+--primary-light:#4CAF50;
+--light:#F1F8E9;
+--white:#ffffff;
+--gray:#666;
+--shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Segoe UI, sans-serif;
+line-height:1.7;
+color:#222;
+background:var(--white);
+}
+
+header{
+background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-size:2rem;
+margin-bottom:5px;
+}
+
+header p{
+opacity:0.9;
+}
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+color:var(--primary);
+margin-bottom:20px;
+}
+
+.card{
+background:var(--light);
+padding:25px;
+border-radius:15px;
+box-shadow:var(--shadow);
+margin-bottom:20px;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+.info{
+background:#fff3e0;
+padding:20px;
+border-left:5px solid #ff9800;
+border-radius:10px;
+margin:20px 0;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px 20px;
+margin-top:40px;
+font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌳 Cultivo de Eucalipto em Sistema Silvipastoril</h1>
+<p>Guia Técnico Desenvolvido por <strong>Hiago Azeredo Alves Roberto</strong><br>
+Técnico em formação em Zootecnia</p>
+</header>
+
+<section>
+<h2>📌 Resumo Rápido para o Produtor</h2>
+
+<div class="card">
+<ul>
+<li><strong>Espaçamento recomendado:</strong> 12x2m ou 14x2m</li>
+<li><strong>Primeira adubação:</strong> 30 dias após plantio</li>
+<li><strong>Controle de formigas:</strong> antes do plantio</li>
+<li><strong>Primeiro desbaste:</strong> 4º ao 5º ano</li>
+<li><strong>Integração com pastagem:</strong> após 12–18 meses</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>🌱 Tratos Culturais Essenciais</h2>
+
+<div class="card">
+<ul>
+<li>Correção de solo conforme análise química</li>
+<li>Adubação de plantio com fósforo</li>
+<li>Capina nos primeiros 6 meses</li>
+<li>Monitoramento quinzenal de pragas</li>
+<li>Desrama para produção de madeira de qualidade</li>
+</ul>
+</div>
+
+<div class="info">
+⚠️ As recomendações devem ser ajustadas conforme análise de solo e orientação técnica local.
+</div>
+
+</section>
+
+<section>
+<h2>🐛 Principais Pragas</h2>
+
+<div class="card">
+<ul>
+<li><strong>Formiga cortadeira:</strong> controle obrigatório pré-plantio</li>
+<li><strong>Lagartas desfolhadoras:</strong> inspeção periódica</li>
+<li><strong>Psilídeo:</strong> observar deformação nas folhas</li>
+<li><strong>Ferrugem:</strong> monitorar manchas alaranjadas</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>📅 Calendário Técnico Simplificado</h2>
+
+<div class="card">
+<ul>
+<li><strong>Mês 0:</strong> Plantio e adubação inicial</li>
+<li><strong>1º mês:</strong> Replantio de falhas</li>
+<li><strong>3–6 meses:</strong> Capinas e controle de pragas</li>
+<li><strong>1º ano:</strong> Avaliação de crescimento</li>
+<li><strong>4º ano:</strong> Possível desbaste</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>👨‍🌾 Sobre o Autor</h2>
+
+<div class="card">
+<p>
+Hiago Azeredo Alves Roberto é técnico em formação em Zootecnia, com interesse em sistemas de produção sustentáveis e integração lavoura-pecuária-floresta. 
+Este material foi desenvolvido com base em recomendações técnicas e literatura especializada.
+</p>
+</div>
+
+</section>
+
+<footer>
+<p>
+Material técnico baseado em recomendações da Embrapa Florestas.<br>
+© 2026 – Hiago Azeredo Alves Roberto<br>
+Campos dos Goytacazes – RJ
+</p>
+</footer>
+
+</body>
+</html>
